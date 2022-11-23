@@ -25,3 +25,8 @@ Miller Rabin no. that passes 64+ bases `2887148238050771212671429597130393991977
 ## Trick
 SSH not working on some box solution : `sudo ifconfig eth0 mtu 1200`
 
+Instead of proxychains we can use 
+```bash
+proxytunnel -p 10.0.0.7:3128 -d 127.0.0.1:22 -a 2222
+proxytunnel -p proxy:port -d wheretoconnect:port -a ourport
+```
