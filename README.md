@@ -6,7 +6,9 @@ Its also known as rebounded ssrf heres a site that helps https://lock.cmpxchg8b.
 
 If we want a subdomain filter bypass like anything_we_want.but_this_must_be_present.com we can use beeceptor for that.
 
-Dnszone transfer
+Dns enumeration 
+`for sub in $(cat /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.9.144 | grep -v ';\|SOA' | sed -r '/^\s*$/d' | grep $sub | tee -a subdomains.txt;done`
+Dns zone transfer
 `dnsenum --dnsserver 10.129.89.244 --enum -p 0 -s 0 -o subdomains.txt -f /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-110000.txt inlanefreight.htb`
 
 ## Trick
