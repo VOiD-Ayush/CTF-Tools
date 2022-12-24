@@ -12,7 +12,7 @@ def send_ws(payload):
 	# print(resp)
 	# For our case, format the payload in JSON
 	message = unquote(payload).replace('"','\'') # replacing " with ' to avoid breaking JSON structure
-	data = '{"id":%s}' % message
+	data = '{"id":"%s"}' % message
 	print(data)
 	ws.send(data)
 	resp = ws.recv()
