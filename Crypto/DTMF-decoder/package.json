@@ -1,0 +1,25 @@
+{
+  "name": "tonecheck",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "coffeeify",
+      "brfs"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "Nick Matantsev <nick.matantsev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "brfs": "^1.4.3",
+    "browserify": "^13.1.1",
+    "coffeeify": "^2.0.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-dynamics": "0.0.2"
+  }
+}
